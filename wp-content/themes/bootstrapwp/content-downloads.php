@@ -32,8 +32,5 @@
 									?>
 								</div><!--end .product-price-->
 							<?php } ?>
-
-
-
 	</article><!-- #post-## -->
 </div>
