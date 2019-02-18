@@ -38,6 +38,11 @@
 				</div>
 
 				<div class="navbar-collapse collapse navbar-responsive-collapse">
+
+				<a class="navbar-text navbar-right" href="<?php echo edd_get_checkout_uri(); ?>">
+						Cart (<span class="header-cart edd-cart-quantity"><?php echo edd_get_cart_quantity(); ?></span>)
+				</a>
+
 					<?php
 
 					$args = array(
