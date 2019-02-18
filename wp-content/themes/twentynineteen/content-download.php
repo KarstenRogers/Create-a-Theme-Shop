@@ -5,9 +5,15 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+
+<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
+	
+	<?php // check if the post has a Post Thumbnail assigned to it.
+		if ( has_post_thumbnail() ) {
+			the_post_thumbnail('full', array('class' => 'img-responsive'));
+		} ?>
 
 	<div class="entry-content">
 		<?php the_content(); ?>
